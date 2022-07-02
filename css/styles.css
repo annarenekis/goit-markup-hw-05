@@ -57,7 +57,7 @@ img,
 .nav-item {
   display: block;
 }
-.header {
+.header-portfolio {
   border-bottom: 1px solid #ececec;
 }
 .logo,
@@ -129,8 +129,6 @@ img,
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
-
-  top: 100%;
   bottom: 0;
 }
 /* main */
@@ -578,8 +576,8 @@ ul {
 }
 .close-btn {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   color: rgba(0, 0, 0, 1);
@@ -590,6 +588,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 /* animations */
 .nav-item.link,
