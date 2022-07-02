@@ -68,7 +68,9 @@
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button class="order-button button">Заказать услугу</button>
+          <button type="button" class="order-button button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -129,36 +131,39 @@
         </div>
       </section>
       <!-- section2 -->
-      <section class="what-we-do section section-paddin-botton">
+      <section class="activity section section-paddin-botton">
         <div class="container">
-          <h2 class="what-we-do-title section-title">Чем мы занимаемся</h2>
-          <ul class="list what-we-do-list">
-            <li class="what-we-do-list-item">
-              <a href=""
-                ><img
-                  src="./img/img1.jpg"
-                  alt="Создание сайта"
-                  width="370"
-                  height="294"
-              /></a>
+          <h2 class="activity-title section-title">Чем мы занимаемся</h2>
+          <ul class="list activity-list">
+            <li class="activity-li">
+              <img
+                class="activity-img"
+                src="./img/img1.jpg"
+                alt="Создание сайта"
+                width="370"
+                height="294"
+              />
+              <h3 class="activity-img-title">Десктопные приложения</h3>
             </li>
-            <li class="what-we-do-list-item">
-              <a href=""
-                ><img
-                  src="./img/img2.jpg"
-                  alt="Адаптивный веб-дизайн"
-                  width="370"
-                  height="294"
-              /></a>
+            <li class="activity-li">
+              <img
+                class="activity-img"
+                src="./img/img2.jpg"
+                alt="Адаптивный веб-дизайн"
+                width="370"
+                height="294"
+              />
+              <h3 class="activity-img-title">Мобильные приложения</h3>
             </li>
-            <li class="what-we-do-list-item">
-              <a href=""
-                ><img
-                  src="./img/img3.jpg"
-                  alt="Дизайн сайта"
-                  width="370"
-                  height="294"
-              /></a>
+            <li class="activity-li">
+              <img
+                class="activity-img"
+                src="./img/img3.jpg"
+                alt="Дизайн сайта"
+                width="370"
+                height="294"
+              />
+              <h3 class="activity-img-title">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -469,5 +474,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="" width="11px" height="11px">
+            <use href="./img/sprites.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
